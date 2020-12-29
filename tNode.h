@@ -19,7 +19,8 @@ class tNode{
   
  private:
   tNode* lChild;
-  tNode* rchild;
+  tNode* rChild;
   char exp;
   
-}
+};
+#endif

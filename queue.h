@@ -13,4 +13,4 @@ class queue{
  private:
   Node* head;
   Node* tail;
-}
+};

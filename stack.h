@@ -8,14 +8,14 @@
 using namespace std;
 
 class stack{
- public:
+public:
   stack();
   ~stack();
   void push(char);
   char peak();
-  void pop();
+  char pop();
   
- Private:
+private:
   Node* head;
 };
 #endif
