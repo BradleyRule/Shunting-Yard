@@ -23,8 +23,14 @@ queue::~queue(){
 void queue::enqueue(char exp){
   Node* newnode = new Node();
   newnode->setExp(exp);
-  tail->setNext(newnode);
-  tail = newnode;
+  if(head == NULL){
+    head = newnode;
+    tail = newnode;
+  }
+  else if(head != NULL){
+    tail->setNext(newnode);
+    tail = newnode;
+  }
 }
 
 char queue::dequeue(){
